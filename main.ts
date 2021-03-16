@@ -28,7 +28,7 @@ mySprite = sprites.create(img`
     . . f . . . . f . . . . . . . . 
     . . f f f f . f f f f . . . . . 
     `, SpriteKind.Player)
-mySprite.setPosition(10, 80)
+mySprite.setPosition(10, 75)
 mySprite.ay = 50
 scene.setBackgroundImage(img`
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
@@ -154,7 +154,7 @@ scene.setBackgroundImage(img`
     `)
 game.onUpdate(function () {
     if (mySprite.y < 80) {
-        mySprite.ay = 450
+        mySprite.ay = 400
     } else {
         mySprite.ay = 0
         mySprite.vy = 0
